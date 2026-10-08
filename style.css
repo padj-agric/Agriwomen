@@ -1,1 +1,43 @@
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
+/* Conteneur pour aligner les boutons */
+.container-boutons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap; /* Aligne ou empile selon la place disponible */
+    margin-top: 25px;
+}
+
+/* Base commune pour les deux boutons */
+.btn-principal, .btn-secondaire {
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton Blanc (En savoir plus) */
+.btn-principal {
+    background-color: #ffffff;
+    color: #2e7d32; /* Texte vert assorti à votre fond */
+}
+
+/* Bouton Transparent / Bordure (Être partenaire) */
+.btn-secondaire {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Effet au clic sur smartphone */
+.btn-principal:active, .btn-secondaire:active {
+    transform: scale(0.95);
+}
 
